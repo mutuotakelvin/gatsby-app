@@ -12,7 +12,7 @@ const ContactPage = () => {
       <p>
         The best way to reach me is via
         <Link to="https://twitter.com/KelvinMutuota"> @KelvinMutuota </Link>
-        on twiter.
+        on twitter.
       </p>
     </Layout>
   )
