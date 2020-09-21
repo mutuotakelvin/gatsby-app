@@ -1,48 +1,44 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import Card from "../components/card"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
-import ProgressBar from "../components/skill"
+
+import aboutStyles from "./about.module.scss"
 
 const StyledLink = styled(Link)`
   color: palevioletred;
   font-weight: bold;
 `
-const testData = [
-  { bgcolor: "#6a1b9a", completed: 60 },
-  { bgcolor: "#00695c", completed: 80 },
-  { bgcolor: "#ef6c00", completed: 53 },
-]
 
 const AboutPage = () => {
   return (
     <Layout>
       <Head title="About" />
       <div>
-        <h1>About Page</h1>
-        <h2>I'am a fullstack developer passionate about new technologies.</h2>
-
-        <h1>Currently a student in Machakos University </h1>
+        <h1>About Me</h1>
       </div>
       <div>
-        <p>
-          Studying computer science<span role="img">👌</span>
-        </p>
-      </div>
-      <div>
-        <div>JavaScript | HTML | CSS</div>
-        <div className="App">
-          {testData.map((item, idx) => (
-            <ProgressBar
-              key={idx}
-              bgcolor={item.bgcolor}
-              completed={item.completed}
-            />
-          ))}
+        <Card title="I started my journey in the world of computers in 2019, now I’m 21 years old, Pursuing my Computer Science Degree in Machakos University Kenya. Web development is my center of interest, I always love the idea of cross-platform development, 1-n one code base deploy into almost any platform, which web technology like Javascript enables me to do." />
+        <h1>Education</h1>
+        <div className={aboutStyles.condiv}>
+          <Card
+            title="Bachelor of Science(Computer Science)"
+            where="Machakos University"
+            from="Sept 2019"
+            to="Present"
+          />
+          <Card
+            title="HSC"
+            where="LangLang Secondary School"
+            from="2015"
+            to="2018"
+          />
         </div>
       </div>
+
       <StyledLink to="/contact">Want to work with me? Reach out!</StyledLink>
     </Layout>
   )

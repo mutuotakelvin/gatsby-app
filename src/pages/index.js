@@ -9,7 +9,7 @@ const IndexPage = () => {
     <Layout>
       <Head title="Home" />
 
-      <Card />
+      <Card title="Hi am kelvin Mutuota Mwangi" />
     </Layout>
   )
 }
