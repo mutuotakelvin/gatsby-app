@@ -12,6 +12,8 @@ const StyledLink = styled(Link)`
   color: palevioletred;
   font-weight: bold;
 `
+// Date.absolute()
+const yr = Date.now()
 
 const AboutPage = () => {
   return (
@@ -19,6 +21,7 @@ const AboutPage = () => {
       <Head title="About" />
       <div>
         <h1>About Me</h1>
+        <p>{yr}</p>
       </div>
       <div>
         <Card title="I started my journey in the world of computers in 2019, now I’m 21 years old, Pursuing my Computer Science Degree in Machakos University Kenya. Web development is my center of interest, I always love the idea of cross-platform development, 1-n one code base deploy into almost any platform, which web technology like Javascript enables me to do." />

@@ -25,6 +25,7 @@ const Card = ({ title, where, from, to }) => (
   >
     <h3>{title}</h3>
     <h4>{where}</h4>
+    <h4>{from}</h4>
     <h4>{to}</h4>
   </div>
 )
